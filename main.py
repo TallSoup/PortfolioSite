@@ -52,7 +52,7 @@ db.create_all()
 #             msg=f"Subject:New Email from Portfolio Site\n\nFrom: {name}, Email: {email}, Message: {message}")
 
 
-@app.route('/', methods=["GET", "POST"])
+@app.route('/')
 def home():
     all_portfolio = db.session.query(Portfolio).order_by(func.random())
     filters = list(set([x.filter for x in all_portfolio if x.filter]))
