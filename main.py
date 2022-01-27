@@ -31,6 +31,7 @@ class Portfolio(db.Model):
     lightbox_desc = Column(String(500), nullable=False)
     link = Column(String(500), nullable=False)
 
+
 # class ContactForm(FlaskForm):
 #     name = StringField("Name", validators=[DataRequired()])
 #     email = StringField("Email", validators=[DataRequired(), Email()])
